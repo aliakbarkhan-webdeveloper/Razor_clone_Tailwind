@@ -206,7 +206,8 @@
     </section>
 
     <!-- Features -->
-    <section class="w-full grid grid-cols-3 gap-4 overflow-hidden">
+    <section class="relative mt-[2rem] w-full overflow-hidden">
+      <div class="w-full grid grid-cols-3 gap-4 overflow-hidden">
       <!-- Box 1 -->
       <div class="w-full min-h-[15rem] relative cursor-pointer">
         <img
@@ -240,19 +241,34 @@ z
         </svg> -->
 
         <!-- Box-content -->
-        <div>
-          <!-- text-part -->
+        <div
+          class="z-[100] absolute w-full h-full flex flex-col justify-between pl-5 py-6 pr-8"
+        >
+          <!-- TExt part -->
           <div>
-            <h3>Payments Links</h3>
-            <p>share payments via sms,whatsapp or email and get paid.</p>
+            <h3
+              class="font-mullish font-bold text-deepBlueHead leading-[1.2] text-[1.375rem]"
+            >
+              Payments Links
+            </h3>
+            <p class="text-grayText font-mullish mt-6">
+              share payments via sms,whatsapp or email and get paid.
+            </p>
           </div>
           <!-- Hyper links -->
           <div>
-            <a href="#">Know more...</a>
-            <i></i>
+            <a
+            href="#"
+            class="font-mullish font-bold text-lightBlue500 group-hover:text-grayBlue transition-all duration-200"
+            >Know more</a
+          >
+          <i
+            class="group-hover:text-grayBlue transition-all duration-200 w-5 h-5 text-lightBlue500"
+          ></i>
           </div>
         </div>
       </div>
+    </div>
     </section>
   </body>
 </html>
